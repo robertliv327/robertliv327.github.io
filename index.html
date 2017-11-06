@@ -21,6 +21,15 @@
           margin: 0;
           border-radius: 0 !important; 
         }
+        .titleImage {
+          background: url(img/mountain.jpg) no-repeat center center fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          min-height: 720px;
+          overflow: hidden;
+          }
         .card{
           margin: 20px; 
           background-color: white;
@@ -49,9 +58,9 @@
           height: auto; 
         }
         #home{
-          background: #f1948a;
-          padding-top: 80px;
-          padding-bottom: 80px;
+          /*background: #f1948a;*/
+          /*padding-top: 80px;
+          padding-bottom: 80px;*/
         }
         #about{
           background: #a9dfbf;  
@@ -94,7 +103,9 @@
 
     	<!-- Home --> 
     	<section id="home">
-    		<h1 id="big-header" class="text-center">ROBERT LIVAUDAIS</h1>
+        <div class="titleImage">
+          <h1 id="big-header" class="text-center">ROBERT LIVAUDAIS</h1>
+        </div>
     	</section>
  
     	<!-- About -->
