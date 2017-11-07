@@ -100,16 +100,19 @@
   background: #a9dfbf;  
   padding-top: 30px;
   padding-bottom: 30px;
+  top: -250px;
 }
 #portfolio{
   background: #e5e8e8; 
   padding-top: 30px;
   padding-bottom: 30px;
+  top: -250px;
 }
 #contact{
   background: #f9e79f;
   padding-top: 30px;
   padding-bottom: 30px;
+  top: -250px;
 }
 #footer{
   background: #fafafa;
