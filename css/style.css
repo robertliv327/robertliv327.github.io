@@ -31,7 +31,7 @@
   font-size: 25px; 
 }
 .anchor{
-  display: block; 
+  display: block;  
   position: relative;
   top: -90px;
   visibility: hidden;
