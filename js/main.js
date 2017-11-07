@@ -13,7 +13,7 @@
           scrollTop: (target.offset().top - 54)
         }, 1000, "easeInOutExpo");
         return false;
-      }
+      } 
     }
   });
 
