@@ -1,4 +1,4 @@
-// taken from startbootstrap example
+// taken from startbootstrap
 
 $('document').ready(function($) {
   "use strict"; // Start of use strict
