@@ -18,7 +18,7 @@
 }
 .card img{ 
   width: 100%;
-}  
+}
 .card p{
   font-size: 14px; 
   padding: 25px;
@@ -101,7 +101,8 @@
   padding-bottom: 30px;
 }
 #profile-pic{
-  
+  width: 100%;
+  border-radius: 50%;
 }
 #portfolio{
   background: #e5e8e8; 
