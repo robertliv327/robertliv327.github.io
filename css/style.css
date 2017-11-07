@@ -103,6 +103,7 @@
 #profile-pic{
   width: 100%;
   border-radius: 50%;
+  padding: 30px;
 }
 #portfolio{
   background: #e5e8e8; 
