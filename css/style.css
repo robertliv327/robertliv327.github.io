@@ -11,16 +11,14 @@
   background-size: cover;
   min-height: 702px;
   overflow: hidden;
-  }
+}
 .card{
   margin: 20px;
   background-color: white;
 }
- 
 .card img{ 
   width: 100%;
 }  
-
 .card p{
   font-size: 14px; 
   padding: 25px;
@@ -100,19 +98,28 @@
   background: #a9dfbf;  
   padding-top: 30px;
   padding-bottom: 30px;
+  display: block;
+  position: relative;
   top: -250px;
+  visibility: hidden;
 }
 #portfolio{
   background: #e5e8e8; 
   padding-top: 30px;
   padding-bottom: 30px;
+  display: block;
+  position: relative;
   top: -250px;
+  visibility: hidden;
 }
 #contact{
   background: #f9e79f;
   padding-top: 30px;
   padding-bottom: 30px;
+  display: block;
+  position: relative;
   top: -250px;
+  visibility: hidden;
 }
 #footer{
   background: #fafafa;
