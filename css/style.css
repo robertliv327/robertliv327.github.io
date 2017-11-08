@@ -56,7 +56,7 @@
   border: none;
   background-color: #2C3E50;
 } 
-#mainNav a:focus { 
+#mainNav a:focus {
   outline: none; 
 }
 #mainNav .navbar-nav {
