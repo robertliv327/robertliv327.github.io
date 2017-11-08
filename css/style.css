@@ -57,7 +57,7 @@
   background-color: #2C3E50;
 } 
 #mainNav a:focus {
-  outline: none; 
+  outline: none;
 }
 #mainNav .navbar-nav {
   letter-spacing: 1px;  
