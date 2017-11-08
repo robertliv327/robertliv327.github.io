@@ -40,11 +40,9 @@
 .form-group{ 
   border: none;
   border-radius: 0; 
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 400px;
+  padding-right: 400px;
   text-align: center;
-  width: 1000px;
-  max-width: 100%;
 }
 #logo{
   max-width: 50px;
