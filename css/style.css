@@ -40,8 +40,8 @@
 .form-group{ 
   border: none;
   border-radius: 0; 
-  padding-left: 250px;
-  padding-right: 250px;
+  padding-left: 100px;
+  padding-right: 100px;
   text-align: center;
 }
 #logo{
