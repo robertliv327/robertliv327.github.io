@@ -131,11 +131,11 @@
 #contact-form{
   padding-top: 23px; 
 }
-@media only screen and (max-width: 790px) {
+@media only screen and (min-width: 790px) {
   #lowerWidth {
     margin-left: 100px;
     margin-right: 100px;
-  } 
+  }
 }
 #footer{
   background: #fafafa;
