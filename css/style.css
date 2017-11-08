@@ -51,6 +51,15 @@
     text-align: center;
   }
 } 
+.modal-dialog{
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  max-width: 100%;
+}
+.modal-dialog img{
+  width: 100%;
+}
 #logo{
   max-width: 50px;
   height: auto; 
