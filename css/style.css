@@ -42,12 +42,12 @@
   border-radius: 0; 
   text-align: center;
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 768px) {
   .form-group{ 
     border: none;
     border-radius: 0; 
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
     text-align: center;
   }
 }
