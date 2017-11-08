@@ -42,7 +42,6 @@
   border-radius: 0; 
   padding-left: 100px;
   padding-right: 100px;
-  max-width: 1000px;
   text-align: center;
 }
 #logo{
@@ -131,6 +130,7 @@
 }
 #contact-form{
   padding-top: 23px;
+  max-width: 1000px;
 }
 #footer{
   background: #fafafa;
