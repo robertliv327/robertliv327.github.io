@@ -126,15 +126,15 @@
         <div class="container"> 
           <a class="anchor" id="contact-anchor"></a>
           <h2 class="text-center header">CONTACT</h2>
-          <form id="contact-form lower-width">
+          <form id="contact-form lower-width" method="post" onsubmit="return validateForm()" action="https://formspree.io/robertliv327@gmail.com">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Name">
+              <input name="their-name" type="text" class="form-control" placeholder="Name">
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" placeholder="Email">
+              <input name="their-email" type="email" class="form-control" placeholder="Email">
             </div>
             <div class="form-group">
-              <textarea class="form-control" rows="5" placeholder="Message" required data-validation-required-message="Please enter a message."></textarea>
+              <textarea name="message" class="form-control" rows="5" placeholder="Message" required data-validation-required-message="Please enter a message."></textarea>
             </div>
             <div class="form-group">
               <button type="submit" class="btn btn-success btn-lg">Send</button>
