@@ -56,9 +56,14 @@
   border-radius: 0;
   box-shadow: none;
   max-width: 100%;
+  background-color: #ECF0F1;
 }
 .modal-dialog img{
   width: 100%;
+}
+.modal-close-button{
+  padding-top: 20px;
+  text-align: center;
 }
 #logo{ 
   max-width: 50px; 
@@ -128,6 +133,7 @@
   padding-top: 30px;
   padding-bottom: 30px;
   padding-right: 10px;
+  font-weight: 300;
 }
 #profile-pic{
   width: 100%;
