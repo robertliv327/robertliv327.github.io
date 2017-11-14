@@ -3,14 +3,19 @@
   margin: 0;*/ 
   border-radius: 0 !important; 
 } 
-.titleImage{ 
-  background: url(../img/mountain.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height: 702px;
-  overflow: hidden;
+.titleImage{
+  background: url(../img/cropped-mountain.jpg) no-repeat center center fixed;
+}
+@media only screen and (min-width: 768px) {
+  .titleImage{ 
+    background: url(../img/mountain.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 702px;
+    overflow: hidden;
+  }
 }
 .card{
   margin: 20px;
