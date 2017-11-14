@@ -9,7 +9,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 550px;
+  min-height: 560px;
   overflow: hidden;
 }
 @media only screen and (min-width: 768px) {
