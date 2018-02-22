@@ -4,24 +4,72 @@
   border-radius: 0 !important; 
 } 
 .titleImage{
-  background: url(../img/cropped-mountain.jpg) no-repeat center center;
+  background: url(../img/slides/bomb.jpg) no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 560px; 
+  min-height: 705px; 
   overflow: hidden;
+  opacity: 1;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .titleImage{ 
-    background: url(../img/mountain.jpg) no-repeat center center fixed;
+    background: url(../img/slides/cortina2.jpg) no-repeat center;
     -webkit-background-size: cover; 
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height: 702px;
-    overflow: hidden; 
+    min-height: 560px;
+    overflow: hidden;
+    opacity: 1;
   }
+  .arrow{
+    visibility: hidden;
+  }
+}
+.fadeIn{
+  background-color: #F7F9F9;
+}
+/*.opaque{
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}*/
+.transition {    
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.logotxt{
+  font-family: 'Monoton', cursive;
+  font-size: 30px;
+  color: black; 
+}
+.header{
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 25px;
+  letter-spacing: .1em;
+}
+.arrow {
+  margin: 8% 0;
+  position:absolute;
+  width:100%;
+  bottom:0;
+  text-align:center;
+  color: #17202A;
+}
+.slide {
+  -moz-animation: slide 2s infinite;
+  -webkit-animation: slide 2s infinite;
+  animation: slide 2s infinite;
+}
+@keyframes slide {
+    from {top: 500px;}
+    to {top: 550px;}
 }
 .card{
   margin: 20px;
@@ -36,16 +84,11 @@
   text-align: left; 
   line-height: 24px;
 }
-.header{
-  font-family: 'Lato', sans-serif;
-  font-weight: 200;
-  font-size: 25px;
-}
 /* adopted from https://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header */
 .anchor{
   display: block;  
   position: relative;
-  top: -52px;
+  top: -35px;
   visibility: hidden;
 }
 .form-group{
@@ -77,9 +120,39 @@
   margin-top: 20px;
   text-align: center;
 }
-#logo{ 
-  max-width: 50px; 
-  height: auto; 
+.button{
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  padding: 11px;
+  text-transform: uppercase;
+  color: black;
+  border-color: black; 
+  background-color:transparent;
+}
+.button:focus, .button:hover {
+  color: black;
+  border-color: #18BC9C;
+  background-color: #18BC9C; 
+}
+.social{
+  color: #707B7C;
+}
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.3);
+    color: black;
 }
 /* #mainNav tags adapted from "startbootstrap-freelancer" */
 #mainNav {
@@ -87,8 +160,7 @@
   font-weight: 200;
   text-transform: uppercase;
   border: none;
-  background-color: #2C3E50;
-} 
+}
 #mainNav a:focus {
   outline: none;
 }
@@ -96,47 +168,38 @@
   letter-spacing: 1px;  
 }
 #mainNav .navbar-nav li.nav-item a.nav-link {
-  color: white; 
+  color: black; 
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
   color: #18BC9C;
   outline: none; 
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-  color: white; 
+  color: black; 
 }
 #mainNav .navbar-toggler {
   font-size: 14px;
   padding: 11px;
   text-transform: uppercase;
-  color: white;
-  border-color: white; 
+  color: black;
+  border-color: black; 
 }
 #mainNav .navbar-toggler:focus, #mainNav .navbar-toggler:hover {
-  color: white;
+  color: black;
   border-color: #18BC9C;
   background-color: #18BC9C; 
 }
 #big-header{
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 40px; 
+  font-family: 'Playfair Display SC', serif;
+  font-weight: 200;
+  font-size: 60px; 
 }
-#title-container{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-
-  color: #000;
-  background: rgba(253, 254, 254, .5);
-  padding-top: 20px;
-  margin-bottom: 30px;
-  margin-left: -17px;
-  margin-right: -17px; 
+#sub-header{
+  font-family: 'Playfair Display SC', serif;
+  font-size: 25px;
 }
 #about{ 
-  background: #a9dfbf;  
+  background: #D1F2EB;  
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -145,7 +208,7 @@
   padding-top: 30px;
   padding-bottom: 30px;
   padding-right: 10px;
-  font-weight: 300;
+  font-weight: 200;
 }
 #profile-pic{
   width: 100%;
@@ -153,12 +216,12 @@
   padding: 30px; 
 } 
 #portfolio{ 
-  background: #e5e8e8;
+  background: #FAE5D3;
   padding-top: 30px; 
   padding-bottom: 30px;
 }
 #contact{
-  background: #f9e79f; 
+  background: #FCF3CF; 
   padding-top: 30px;
   padding-bottom: 30px; 
 }
@@ -166,7 +229,7 @@
   padding-top: 23px; 
 }
 #footer{
-  background: #fafafa;
+  background: #F7F9F9;
   min-height: 50px;
   text-align: center;
   color: #b1b1b1;
