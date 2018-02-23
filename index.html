@@ -10,7 +10,7 @@
   	<!-- CSS -->
   	<link rel="stylesheet" href="css/style.css">
  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC|Monoton|PT+Sans+Narrow:200|Lato:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC|Monoton|Montserrat" rel="stylesheet">
 
   	<!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -22,29 +22,27 @@
 	<body>
     <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top transition" id="mainNav">
-      <div class="container">
-        <!-- <a class="logotxt navbar-brand js-scroll-trigger" href="#"><img class="img-responsive" id="logo" src="img/logo.jpg" alt="RHL">&nbsp;&nbsp;&nbsp;R H L</a> -->
-        <a style="color:black; text-decoration:none" class="logotxt js-scroll-trigger" href="#home">R H L</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button> 
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"> 
-              <a class="nav-link js-scroll-trigger" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about-anchor">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio-anchor">Portfolio</a>
-            </li> 
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact-anchor">Contact</a>
-            </li>
-          </ul>
-        </div>
+      <!-- <a class="logotxt navbar-brand js-scroll-trigger" href="#"><img class="img-responsive" id="logo" src="img/logo.jpg" alt="RHL">&nbsp;&nbsp;&nbsp;R H L</a> -->
+      <a style="color:black; text-decoration:none" class="logotxt js-scroll-trigger" href="#home">R H L</a>
+      <button class="navbar-toggler hvr-fade" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fa fa-bars"></i>
+      </button> 
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"> 
+            <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about-anchor">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio-anchor">Portfolio</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact-anchor">Contact</a>
+          </li>
+        </ul>
       </div>
     </nav>
 
@@ -64,7 +62,7 @@
   	<!-- About -->
   	<section id="about"> 
       <a class="anchor" id="about-anchor"></a>
-  		<h2 class="text-center header">ABOUT</h2>
+  		<h2 class="text-center header">ABOUT</h2><hr class="divider">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -80,51 +78,51 @@
     <!-- Portfolio -->
     <section id="portfolio">
       <a class="anchor" id="portfolio-anchor"></a>
-      <h2 class="text-center header">PORTFOLIO</h2><br/>
+      <h2 class="text-center header">PORTFOLIO</h2><hr class="divider">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
             <!-- 3d Printer -->
             <div class="card" data-aos-once="true" data-aos="fade-up" data-aos-delay="100">
-              <img class="img-responsive" src="img/3d_printer.jpg" alt="3d Printer image">
-              <p><b>Personal 3d Printer:</b>&nbsp; My 3d Printer that I built using an arduino, salvaged DVD drives, an old computer's power source, a few stepper motors, and a 3d printing pen. For the software, I modified various open-source slicing programs and the G-code that they produced. <a href="#3d-printer-modal" data-toggle="modal">Click here to view more pictures.</a></p>
+              <img class="img-responsive" src="img/3d-printer.png" alt="3d Printer image">
+              <p><b><u>Personal 3d Printer:</u></b>&nbsp; My 3d Printer that I built using an arduino, salvaged DVD drives, an old computer's power source, a few stepper motors, and a 3d printing pen. For the software, I modified various open-source slicing programs and the G-code that they produced. <a href="#3d-printer-modal" data-toggle="modal">Click here</a> to view some pictures.</p>
             </div>
             <!-- Pebble Scavenger -->
             <div class="card" data-aos-once="true" data-aos="fade-up" data-aos-delay="100">
-              <img class="img-responsive" src="img/pebble.jpg" alt="Pebble Scavenger image">
-              <p><b>Pebble Scavenger Hunt:</b>&nbsp; A group project that three friends and I worked on as our final project for CS50: Software Design and Implementation. Our game server hosts a real-time scavenger hunt in which teams communicate via Pebble watches and compete to find all of the clues quickest. <a href="https://github.com/robertliv327/pebble-scavenger-hunt" target="_blank">Click here to view the code on Github.</a></p>
+              <img class="img-responsive" src="img/smartwatch.png" alt="Pebble Scavenger image">
+              <p><b><u>Pebble Scavenger Hunt:</u></b>&nbsp; A group project that three friends and I worked on as our final project for CS50: Software Design and Implementation. Our game server hosts a real-time scavenger hunt in which teams communicate via Pebble watches and compete to find all of the clues quickest. <a href="https://github.com/robertliv327/pebble-scavenger-hunt" target="_blank">Click here</a> to view the code on Github.</p>
             </div>
             <!-- CS51 Final Project -->
             <div class="card" data-aos-once="true" data-aos="fade-up" data-aos-delay="100">
-              <img class="img-responsive" src="img/y86.jpg" alt="51 Project image">
-              <p><b>y86 Computer Simulator:</b>&nbsp; A basic computer simulator that I built as my final project for CS51: Computer Architecture. My CPU performs the full fetch-decode-execute instruction cycle as it takes in commands from a hex file.</p>
+              <img class="img-responsive" src="img/circuit.png" alt="51 Project image">
+              <p><b>y86 Computer Simulator:</u></b>&nbsp; A basic computer simulator that I built as my final project for CS51: Computer Architecture. My CPU performs the full fetch-decode-execute instruction cycle as it takes in commands from a hex file. <a href="#y86-modal" data-toggle="modal">Click here</a> to view a picture of the competed circuit simulation.</p>
             </div> 
             <!-- This Website -->
             <div class="card" data-aos-once="true" data-aos="fade-up" data-aos-delay="100">
-              <img class="img-responsive" src="img/logo2.jpg" alt="Website image">
-              <p><b>Personal Website:</b>&nbsp; I built my personal website (this one) as I taught myself HTML, CSS, and JavaScript. I utilized Bootstrap and JQuery, and am continuing to improve its features.</p>
+              <img class="img-responsive" src="img/logo.jpg" alt="Website image">
+              <p><b><u>Personal Website:</u></b>&nbsp; I built my personal website (this one) as I taught myself HTML, CSS, and JavaScript. I utilized Bootstrap and JQuery, and am continuing to improve its features. <a href="https://github.com/robertliv327/robertliv327.github.io" target="_blank">Click here</a> to view the code on Github.</p>
             </div>
           </div> 
           <div class="col-md-6">
             <!-- TSE -->
             <div class="card" data-aos-once="true" data-aos="fade-up" data-aos-delay="100">
-              <img class="img-responsive" src="img/tse.jpg" alt="TSE image">
-              <p><b>Tiny Search Engine:</b>&nbsp; A simple search engine that takes in a search query from the user, crawls the web, indexes the pages found, and outputs a ranked list of search results. <a href="https://github.com/robertliv327/tse" target="_blank">Click here to view the code on Github.</a></p>
+              <img class="img-responsive" src="img/search.png" alt="TSE image">
+              <p><b><u>Tiny Search Engine:</u></b>&nbsp; A simple search engine that takes in a search query from the user, crawls the web, indexes the pages found, and outputs a ranked list of search results. <a href="https://github.com/robertliv327/tse" target="_blank">Click here</a> to view the code on Github.</p>
             </div>
             <!-- Prolog N-Queens Solver -->
             <div class="card" data-aos-once="true" data-aos="fade-up" data-aos-delay="100">
-              <img class="img-responsive" src="img/8queens.jpg" alt="59 Project image">
-              <p><b>Prolog N-Queens Solver:</b>&nbsp; My solver for the popular Eight Queens game that I wrote to teach myself Prolog and delve into logical programming languages. I happened to explore runtime efficiency by building three different solvers - one that uses brute force, one that uses simple recursion, and finally one that uses tail recursion. <a href="https://github.com/robertliv327/N-Queens" target="_blank">Click here to view the code on Github.</a></p>
+              <img class="img-responsive" src="img/crown.png" alt="N Queens Project image">
+              <p><b><u>Prolog N-Queens Solver:</u></b>&nbsp; My solver for the popular Eight Queens game that I wrote to teach myself Prolog and delve into logical programming languages. I happened to explore runtime efficiency by building three different solvers - one that uses brute force, one that uses simple recursion, and finally one that uses tail recursion. <a href="https://github.com/robertliv327/N-Queens" target="_blank">Click here</a> to view the code on Github.</p>
             </div>
             <!-- Huffman --> 
             <div class="card" data-aos-once="true" data-aos="fade-up" data-aos-delay="100">
-              <img class="img-responsive" src="img/huffman.jpg" alt="Huffman image">
-              <p><b>Huffman Encoding Algorithm:</b>&nbsp; A program that uses lossless data compression to compress and decompress files. <a href="https://github.com/robertliv327/Huffman-Encoding" target="_blank">Click here to view the code on Github.</a></p>
+              <img class="img-responsive" src="img/compression.png" alt="Huffman image">
+              <p><b><u>Huffman Encoding Algorithm:</u></b>&nbsp; A program that uses lossless data compression to compress and decompress files. <a href="https://github.com/robertliv327/Huffman-Encoding" target="_blank">Click here</a> to view the code on Github.</p>
             </div>
             <!-- Art... --> 
             <div class="card" data-aos-once="true" data-aos="fade-up" data-aos-delay="100">
-              <img class="img-responsive" src="img/napoleon.jpg" alt="Art image">
-              <p><b>Art Projects:</b>&nbsp; Aside from CS, I have a passion for painting and drawing. <a href="#art-modal" data-toggle="modal">Click here</a> to see a collection of my paintings, drawings, and sketches that I've worked on over the years.</p>
+              <img class="img-responsive" src="img/palette.png" alt="Art image">
+              <p><b><u>Art Projects:</u></b>&nbsp; Aside from CS, I have a passion for painting and drawing. <a href="#art-modal" data-toggle="modal">Click here</a> to see a collection of my paintings, drawings, and sketches that I've worked on over the years.</p>
             </div>
           </div>
         </div>
@@ -135,19 +133,19 @@
     <section id="contact"> 
       <div class="container"> 
         <a class="anchor" id="contact-anchor"></a>
-        <h2 class="text-center header">CONTACT</h2>
+        <h2 class="text-center header">CONTACT</h2><hr class="divider">
         <form id="contact-form" method="post" onsubmit="return validateForm()" action="https://formspree.io/robertliv327@gmail.com">
           <div class="form-group">
-            <input name="their-name" type="text" class="form-control" placeholder="Name">
+            <input name="their-name" type="text" class="form-control" placeholder="NAME">
           </div>
           <div class="form-group">
-            <input name="their-email" type="email" class="form-control" placeholder="Email">
+            <input name="their-email" type="email" class="form-control" placeholder="EMAIL">
           </div>
           <div class="form-group">
-            <textarea name="message" class="form-control" rows="5" placeholder="Message" required data-validation-required-message="Please enter a message."></textarea>
+            <textarea name="message" class="form-control" rows="5" placeholder="MESSAGE" required data-validation-required-message="Please enter a message."></textarea>
           </div>
           <div class="form-group">
-            <button type="submit" class="button">Send</button>
+            <button type="submit" class="button hvr-sweep-to-right">Send</button>
           </div>
         </form> 
       </div>
@@ -161,8 +159,9 @@
     				<li class="list-inline-item"><a href="https://github.com/robertliv327"><i class="social hvr-grow fa fa-github fa-2x"></i></a></li>&nbsp;&nbsp;&nbsp;
     				<li class="list-inline-item"><a href="https://www.linkedin.com/in/robert-livaudais-773241152/"><i class="social hvr-grow fa fa-linkedin fa-2x"></i></a></li>
     			</ul>
-          <p>© 2017 Robert Livaudais</p>
+          <p>© 2018 Robert Livaudais</p>
   		</div> 
+      <div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
   	</footer> 
 
     <!-- Portfolio modals -->
@@ -189,7 +188,27 @@
                   <img class="img-responsive" src="img/3d_printer5.jpg" alt="3d Printer image">
                 </div>
               </div>
-              <button class="modal-close-button button" type="button" data-dismiss="modal">
+              <button class="modal-close-button button hvr-fade" type="button" data-dismiss="modal">
+                Close
+              </button> 
+            </div> 
+          </div> 
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="y86-modal">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="text-center header">y86 Simulator Circuit</span>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div> 
+          <div class="modal-body">
+            <div class="container">
+              <img class="img-responsive" src="img/y86.jpg" alt="y86 image">
+              <button class="modal-close-button button hvr-fade" type="button" data-dismiss="modal">
                 Close
               </button> 
             </div> 
@@ -220,7 +239,7 @@
                   <img class="img-responsive" src="img/art4.jpg" alt="art image">
                 </div>
               </div>
-              <button class="modal-close-button button" type="button" data-dismiss="modal">
+              <button class="modal-close-button button hvr-fade" type="button" data-dismiss="modal">
                 Close
               </button> 
             </div> 

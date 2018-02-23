@@ -38,6 +38,12 @@ $('document').ready(function($) {
     $(".titleImage").css("opacity", 1 - $(window).scrollTop() / 900);  
   });
 
+  $(".navbar-toggler").click( function()
+    {
+      $('#mainNav').addClass('fadeIn');
+    }
+  );
+
   // AOS setup
   AOS.init({
     duration: 1200,

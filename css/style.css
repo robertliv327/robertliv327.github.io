@@ -4,7 +4,7 @@
   border-radius: 0 !important; 
 } 
 .titleImage{
-  background: url(../img/slides/bomb.jpg) no-repeat center fixed;
+  background: url(../img/slides/cortina2.jpg) no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -49,10 +49,11 @@
   color: black; 
 }
 .header{
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Playfair Display SC', serif;
   font-weight: 200;
-  font-size: 25px;
-  letter-spacing: .1em;
+  font-size: 30px;
+/*  letter-spacing: .1em;*/
+  padding-bottom: 0px;
 }
 .arrow {
   margin: 8% 0;
@@ -76,13 +77,26 @@
   background-color: white;
 }
 .card img{ 
-  width: 100%;
+  width: 100%;  
+  text-align: center;
+  height: auto; 
+  width: auto; 
+  max-width: 300px; 
+  max-height: 300px;
+  padding: 35px;
+  display: block; /*for the img inside your div */  
+  margin-left: auto;
+  margin-right: auto;
 }
 .card p{
   font-size: 14px;
-  padding: 25px;
+  padding-top: 0px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
   text-align: left; 
   line-height: 24px;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 /* adopted from https://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header */
 .anchor{
@@ -90,6 +104,12 @@
   position: relative;
   top: -35px;
   visibility: hidden;
+}
+.divider{
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  max-width: 1000px;
 }
 .form-group{
   border: none;
@@ -104,6 +124,9 @@
     padding-right: 200px;
     text-align: center;
   }
+}
+.form-control{
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .modal-dialog{
   border: none;
@@ -127,32 +150,83 @@
   text-transform: uppercase;
   color: black;
   border-color: black; 
-  background-color:transparent;
-}
-.button:focus, .button:hover {
-  color: black;
-  border-color: #18BC9C;
-  background-color: #18BC9C; 
+  background-color: transparent;
 }
 .social{
   color: #707B7C;
 }
+/* Grow */
 .hvr-grow {
-    display: inline-block;
-    vertical-align: middle;
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    transition-duration: 0.3s;
-    transition-property: transform;
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
 }
-
 .hvr-grow:hover,
 .hvr-grow:focus,
 .hvr-grow:active {
     transform: scale(1.3);
-    color: black;
+    color: #148F77;
+}
+/* Fade */
+.hvr-fade {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+  background-color: #17A589;
+}
+/* Sweep To Right */
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #17A589;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: black;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 /* #mainNav tags adapted from "startbootstrap-freelancer" */
 #mainNav {
@@ -160,6 +234,7 @@
   font-weight: 200;
   text-transform: uppercase;
   border: none;
+  margin-left: 0px;
 }
 #mainNav a:focus {
   outline: none;
@@ -171,7 +246,7 @@
   color: black; 
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #18BC9C;
+  color: #1ABC9C;
   outline: none; 
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
@@ -184,22 +259,18 @@
   color: black;
   border-color: black; 
 }
-#mainNav .navbar-toggler:focus, #mainNav .navbar-toggler:hover {
-  color: black;
-  border-color: #18BC9C;
-  background-color: #18BC9C; 
-}
 #big-header{
   font-family: 'Playfair Display SC', serif;
   font-weight: 200;
   font-size: 60px; 
 }
 #sub-header{
-  font-family: 'Playfair Display SC', serif;
-  font-size: 25px;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
 }
 #about{ 
-  background: #D1F2EB;  
+  background: #76D7C4;  
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -209,6 +280,7 @@
   padding-bottom: 30px;
   padding-right: 10px;
   font-weight: 200;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 #profile-pic{
   width: 100%;
@@ -216,12 +288,12 @@
   padding: 30px; 
 } 
 #portfolio{ 
-  background: #FAE5D3;
+  background: #E5E8E8;
   padding-top: 30px; 
   padding-bottom: 30px;
 }
 #contact{
-  background: #FCF3CF; 
+  background: #76D7C4; 
   padding-top: 30px;
   padding-bottom: 30px; 
 }
@@ -237,4 +309,5 @@
   padding-bottom: 30px;
   font-size: 12px;
   line-height: 20px;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
