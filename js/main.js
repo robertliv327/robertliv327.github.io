@@ -7,7 +7,22 @@ var count = 1;
 
 $('document').ready(function($) {
   "use strict"; // Start of use strict
-  var i = 0;
+
+  //Preloader
+  // $(window).load(function() {
+  //   preloaderFadeOutTime = 500;
+  //   function hidePreloader() {
+  //     var preloader = $('.spinner-wrapper');
+  //     preloader.fadeOut(preloaderFadeOutTime);
+  //   }
+  //   hidePreloader();
+  // });
+
+  window.onload = function () {
+    $('.spinner-wrapper').fadeOut(2000, function(){ 
+      $('.spinner-wrapper').remove(); 
+    });
+  }
 
   $("#slideshow > div:gt(0)").hide();
 
