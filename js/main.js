@@ -9,16 +9,27 @@ $('document').ready(function($) {
   "use strict"; // Start of use strict
   var i = 0;
 
-  $('.titleImage').addClass('img1');
+  // $('.titlePage').addClass('img1');
 
-  var infiniteLoop = setInterval(function(){
-    var prev = count;
-    count++;
-    if (count == 12){
-      count = 1;
-    }
-    $('.titleImage').addClass('img'+count).removeClass('img'+prev);
-  }, 6000);
+  // var infiniteLoop = setInterval(function(){
+  //   var prev = count;
+  //   count++;
+  //   if (count == 12){
+  //     count = 1;
+  //   }
+  //   $('.titlePage').addClass('img'+count).removeClass('img'+prev);
+  // }, 6000);
+
+  $("#slideshow > div:gt(0)").hide();
+
+  setInterval(function() { 
+    $('#slideshow > div:first')
+      .fadeOut(3000)
+      .next()
+      .fadeIn(3000)
+      .end()
+      .appendTo('#slideshow');
+  },  7000);
 
   // Smooth scrolling using jQuery easing - adopted from bootstrap.com
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
@@ -57,7 +68,7 @@ $('document').ready(function($) {
     } else {
       $('#mainNav').removeClass('greenNav');
     }
-    $(".titleImage").css("opacity", 1 - $(window).scrollTop() / 900); 
+    $(".titlePage").css("opacity", 1 - $(window).scrollTop() / 900); 
   });
 
   $(".navbar-toggler").click( function(){
@@ -68,19 +79,5 @@ $('document').ready(function($) {
   AOS.init({
     duration: 1200,
   })
-
-
-
-  $("#slideshow > div:gt(0)").hide();
-
-  setInterval(function() { 
-    $('#slideshow > div:first')
-      .fadeOut(1000)
-      .next()
-      .fadeIn(1000)
-      .end()
-      .appendTo('#slideshow');
-  },  3000);
-  
 })(jQuery); // End of use strict
 
