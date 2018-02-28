@@ -9,17 +9,6 @@ $('document').ready(function($) {
   "use strict"; // Start of use strict
   var i = 0;
 
-  // $('.titlePage').addClass('img1');
-
-  // var infiniteLoop = setInterval(function(){
-  //   var prev = count;
-  //   count++;
-  //   if (count == 12){
-  //     count = 1;
-  //   }
-  //   $('.titlePage').addClass('img'+count).removeClass('img'+prev);
-  // }, 6000);
-
   $("#slideshow > div:gt(0)").hide();
 
   setInterval(function() { 
@@ -58,17 +47,19 @@ $('document').ready(function($) {
 
   // Fade in navbar, make background opaque on scroll
   $(window).scroll(function() {
-    if ($(window).scrollTop() > 40 ){
+    var scrolled = $(window).scrollTop();
+    if (scrolled > 40 ){
       $('#mainNav').addClass('fadeIn');
     } else {
       $('#mainNav').removeClass('fadeIn');
     };
-    if ($(window).scrollTop() > 1255 ){
+    if (scrolled > 1255 ){
       $('#mainNav').addClass('greenNav');
     } else {
       $('#mainNav').removeClass('greenNav');
     }
-    $(".titlePage").css("opacity", 1 - $(window).scrollTop() / 900); 
+    //$(".titlePage").css("opacity", 1 - scrolled / 900); 
+    $('#slideshow img').css('top',-(scrolled*0.3)+'px');
   });
 
   $(".navbar-toggler").click( function(){
