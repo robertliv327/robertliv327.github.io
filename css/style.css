@@ -2,34 +2,40 @@
 /*  padding: 0;
   margin: 0;*/ 
   border-radius: 0 !important; 
-} 
+}
 .titleImage{
-  background: url(../img/slides/cortina2.jpg) no-repeat center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height: 705px; 
-  overflow: hidden;
+  min-height: 705px;
+  opacity: 1;
+  -webkit-transition: all 2s linear, opacity 0.1s linear;
+  -moz-transition: all 2s linear, opacity 0.1s linear;
+  -o-transition: all 2s linear, opacity 0.1s linear;
+  transition: all 2s linear, opacity 0.1s linear;
   opacity: 1;
 }
 @media only screen and (max-width: 768px) {
   .titleImage{ 
-    background: url(../img/slides/cortina2.jpg) no-repeat center;
-    -webkit-background-size: cover; 
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     min-height: 560px;
-    overflow: hidden;
     opacity: 1;
   }
   .arrow{
     visibility: hidden;
   }
 }
+.gapImage{
+  background: url(../img/slides/cortina5.jpg) no-repeat center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 500px; 
+  overflow: hidden;
+  opacity: 1;
+}
 .fadeIn{
   background-color: #F7F9F9;
+}
+.greenNav{
+  background-color: #A3E4D7;
 }
 /*.opaque{
   opacity: 1;
@@ -49,7 +55,7 @@
   color: black; 
 }
 .header{
-  font-family: 'Playfair Display SC', serif;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 200;
   font-size: 30px;
 /*  letter-spacing: .1em;*/
@@ -260,9 +266,9 @@
   border-color: black; 
 }
 #big-header{
-  font-family: 'Playfair Display SC', serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 200;
-  font-size: 60px; 
+  font-size: 100px; 
 }
 #sub-header{
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -310,4 +316,41 @@
   font-size: 12px;
   line-height: 20px;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+/* slideshow... */
+.img1{background: url(../img/slides/cortina4.jpg) no-repeat center fixed; -webkit-background-size: cover;
+  -moz-background-size: cover; -o-background-size: cover; background-size: cover; overflow: hidden;
+}
+.img2{background: url(../img/slides/cortina1.jpg) no-repeat center fixed; -webkit-background-size: cover;
+  -moz-background-size: cover; -o-background-size: cover; background-size: cover; overflow: hidden;
+}
+.img3{background: url(../img/slides/ecuador.jpg) no-repeat center fixed; -webkit-background-size: cover;
+  -moz-background-size: cover; -o-background-size: cover; background-size: cover; overflow: hidden;
+}
+.img4{background: url(../img/slides/cortina2.jpg) no-repeat center fixed; -webkit-background-size: cover;
+  -moz-background-size: cover; -o-background-size: cover; background-size: cover; overflow: hidden;
+}
+.img5{background: url(../img/slides/carolina.jpg) no-repeat center fixed; -webkit-background-size: cover;
+  -moz-background-size: cover; -o-background-size: cover; background-size: cover; overflow: hidden;
+}
+.img6{background: url(../img/slides/cali.jpg) no-repeat center fixed; -webkit-background-size: cover;
+  -moz-background-size: cover; -o-background-size: cover; background-size: cover; overflow: hidden;
+}
+.img7{background: url(../img/slides/bomb.jpg) no-repeat center fixed; -webkit-background-size: cover;
+  -moz-background-size: cover; -o-background-size: cover; background-size: cover; overflow: hidden;
+}
+.img8{background: url(../img/slides/whites.jpg) no-repeat center fixed; -webkit-background-size: cover;
+  -moz-background-size: cover; -o-background-size: cover; background-size: cover; overflow: hidden;
+}
+.img9{background: url(../img/slides/firenze.jpg) no-repeat center fixed; -webkit-background-size: cover;
+  -moz-background-size: cover; -o-background-size: cover; background-size: cover; overflow: hidden;
+}
+.img10{background: url(../img/slides/dartmouth.jpg) no-repeat center fixed; -webkit-background-size: cover;
+  -moz-background-size: cover; -o-background-size: cover; background-size: cover; overflow: hidden;
+}
+.img10{background: url(../img/slides/aspen.jpg) no-repeat center fixed; -webkit-background-size: cover;
+  -moz-background-size: cover; -o-background-size: cover; background-size: cover; overflow: hidden;
+}
+.img11{background: url(../img/slides/virginia.jpg) no-repeat center fixed; -webkit-background-size: cover;
+  -moz-background-size: cover; -o-background-size: cover; background-size: cover; overflow: hidden;
 }

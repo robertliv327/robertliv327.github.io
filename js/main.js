@@ -1,7 +1,24 @@
 // js for my website
 
+var images = ['../img/slides/cortina4.jpg','../img/slides/aspen.jpg','../img/slides/bomb.jpg',
+'../img/slides/carolina.jpg','../img/slides/dartmouth.jpg','../img/slides/ecuador.jpg',
+'../img/slides/firenze.jpg','../img/slides/whites.jpg','../img/slides/virginia.jpg'];
+var count = 1;
+
 $('document').ready(function($) {
   "use strict"; // Start of use strict
+  var i = 0;
+
+  $('.titleImage').addClass('img1');
+
+  var infiniteLoop = setInterval(function(){
+    var prev = count;
+    count++;
+    if (count == 12){
+      count = 1;
+    }
+    $('.titleImage').addClass('img'+count).removeClass('img'+prev);
+  }, 6000);
 
   // Smooth scrolling using jQuery easing - adopted from bootstrap.com
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
@@ -35,17 +52,21 @@ $('document').ready(function($) {
     } else {
       $('#mainNav').removeClass('fadeIn');
     };
-    $(".titleImage").css("opacity", 1 - $(window).scrollTop() / 900);  
+    if ($(window).scrollTop() > 1255 ){
+      $('#mainNav').addClass('greenNav');
+    } else {
+      $('#mainNav').removeClass('greenNav');
+    }
+    $(".titleImage").css("opacity", 1 - $(window).scrollTop() / 900); 
   });
 
-  $(".navbar-toggler").click( function()
-    {
-      $('#mainNav').addClass('fadeIn');
-    }
-  );
+  $(".navbar-toggler").click( function(){
+    $('#mainNav').addClass('fadeIn');
+  });
 
   // AOS setup
   AOS.init({
     duration: 1200,
   })
 })(jQuery); // End of use strict
+
