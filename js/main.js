@@ -18,11 +18,19 @@ $('document').ready(function($) {
   //   hidePreloader();
   // });
 
-  window.onload = function () {
-    $('.spinner-wrapper').fadeOut(2000, function(){ 
-      $('.spinner-wrapper').remove(); 
-    });
-  }
+  // window.onload = function () {
+  //   $('.spinner-wrapper').fadeOut(2000, function(){ 
+  //     $('.spinner-wrapper').remove(); 
+  //   });
+  // }
+  
+  $(window).on("load", function(){
+    setTimeout(function(){
+      $('.spinner-wrapper').fadeOut('slow', function() {
+        $('.spinner-wrapper').remove();
+      });
+    }, 1500);
+  });
 
   $("#slideshow > div:gt(0)").hide();
 
