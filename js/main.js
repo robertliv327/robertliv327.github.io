@@ -23,14 +23,12 @@ $('document').ready(function($) {
   //     $('.spinner-wrapper').remove(); 
   //   });
   // }
-  
-  $(window).on("load", function(){
-    setTimeout(function(){
-      $('.spinner-wrapper').fadeOut('slow', function() {
-        $('.spinner-wrapper').remove();
-      });
-    }, 1500);
-  });
+
+  setTimeout(function(){
+    $('.spinner-wrapper').fadeOut('slow', function() {
+      $('.spinner-wrapper').remove();
+    });
+  }, 2500);
 
   $("#slideshow > div:gt(0)").hide();
 
