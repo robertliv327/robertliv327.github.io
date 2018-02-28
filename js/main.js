@@ -80,7 +80,9 @@ $('document').ready(function($) {
       $('#mainNav').removeClass('greenNav');
     }
     //$(".titlePage").css("opacity", 1 - scrolled / 900); 
-    $('#slideshow img').css('top',-(scrolled*0.3)+'px');
+    if (!isMobile()) {
+      $('#slideshow img').css('top',-(scrolled*0.3)+'px');
+    }
   });
 
   $(".navbar-toggler").click( function(){
@@ -93,3 +95,6 @@ $('document').ready(function($) {
   })
 })(jQuery); // End of use strict
 
+function isMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
