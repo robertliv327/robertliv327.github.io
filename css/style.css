@@ -3,6 +3,8 @@
   margin: 0;*/ 
   border-radius: 0 !important; 
 }
+
+/*HOME*/
 .titlePage{
   min-height: 687px;
   opacity: 1;
@@ -10,48 +12,21 @@
 #slideshow img { 
   position: fixed; 
   width: 100%;
-  height: 100%;
+  height: 100vh;
   top: 0;
   left: 0;
   z-index: -1;
+  object-fit: cover;
 }
-@media only screen and (max-width: 768px) {
-  .titlePage{ 
-    min-height: 560px;
-    opacity: 1;
-  }
-  .arrow{
-    visibility: hidden;
-  }
+#big-header{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 180;
+  font-size: 100px; 
 }
-.fadeIn{
-  background-color: #F7F9F9;
-}
-.greenNav{
-  background-color: #A3E4D7;
-}
-/*.opaque{
-  opacity: 1;
-  transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
-}*/
-.transition {    
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-.logotxt{
-  font-family: 'Monoton', cursive;
-  font-size: 30px;
-  color: black; 
-}
-.header{
+#sub-header{
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 200;
-  font-size: 30px;
-  padding-bottom: 0px;
+  font-size: 22px;
+  text-transform: uppercase;
 }
 .arrow {
   margin: 8% 0;
@@ -70,242 +45,26 @@
     from {top: 500px;}
     to {top: 550px;}
 }
-.timeline{
-  background: #E5E8E8;
-  padding-top: 30px; 
-  padding-bottom: 30px;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  position: relative;
-}
-.timeline ul {
-  padding: 50px 0;
-}
 
-.timeline ul li {
-  list-style-type: none;
-  position: relative;
-  width: 3px;
-  margin: 0 auto;
-  padding-top: 50px;
-  background: #76D7C4;
+/*NAVBAR*/
+.fadeIn{
+  background-color: #F7F9F9;
 }
-.timeline ul li:nth-child(1) {
-  background: transparent;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(163, 228, 215, 0.75), rgba(118, 215, 196, 1));
+.greenNav{
+  background-color: #A3E4D7;
 }
-
-.timeline ul li::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background: #48C9B0;
+.transition {    
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
-
-.timeline ul li div {
-  position: relative;
-  bottom: 0;
-  width: 300px;
-  padding: 15px;
-  background: transparent;
+.logotxt{
+  font-family: 'Monoton', cursive;
+  font-size: 30px;
+  color: black; 
 }
-
-.timeline ul li div::before {
-  content: '';
-  position: absolute;
-  bottom: 7px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-}
-
-.timeline ul li:nth-child(odd) div {
-  left: 45px;
-}
-
-.timeline ul li:nth-child(odd) div::before {
-  left: -15px;
-  border-width: 8px 16px 8px 0;
-  border-color: transparent transparent transparent;
-}
-
-.timeline ul li:nth-child(even) div {
-  left: -300px;
-}
-
-.timeline ul li:nth-child(even) div::before {
-  right: -15px;
-  border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent;
-}
-time {
-  display: block;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-.card{
-  margin: 20px;
-  background-color: white;
-}
-.card img{ 
-  width: 100%;  
-  text-align: center;
-  height: auto; 
-  width: auto; 
-  max-width: 300px; 
-  max-height: 300px;
-  padding: 35px;
-  display: block; /*for the img inside your div */  
-  margin-left: auto;
-  margin-right: auto;
-}
-.card p{
-  font-size: 14px;
-  padding-top: 0px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 25px;
-  text-align: left; 
-  line-height: 24px;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-/* adopted from https://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header */
-.anchor{
-  display: block;  
-  position: relative;
-  top: -35px;
-  visibility: hidden;
-}
-.divider{
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-  max-width: 1000px;
-}
-.form-group{
-  border: none;
-  border-radius: 0; 
-  text-align: center;
-}
-@media only screen and (min-width: 768px) {
-  .form-group{ 
-    border: none;
-    border-radius: 0; 
-    padding-left: 200px;
-    padding-right: 200px;
-    text-align: center;
-  }
-}
-.form-control{
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-.modal-dialog{
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  max-width: 100%;
-  background-color: #ECF0F1;
-}
-.modal-dialog img{
-  width: 100%;
-  margin-top: 30px;
-}
-.modal-close-button{ 
-  margin-top: 20px;
-  text-align: center;
-}
-.button{
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  padding: 11px;
-  text-transform: uppercase;
-  color: black;
-  border-color: black; 
-  background-color: transparent;
-}
-.social{
-  color: #707B7C;
-}
-/* Grow */
-.hvr-grow {
-  display: inline-block;
-  vertical-align: middle;
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  transition-duration: 0.3s;
-  transition-property: transform;
-}
-.hvr-grow:hover,
-.hvr-grow:focus,
-.hvr-grow:active {
-    transform: scale(1.3);
-    color: #148F77;
-}
-/* Fade */
-.hvr-fade {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  overflow: hidden;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: color, background-color;
-  transition-property: color, background-color;
-}
-.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
-  background-color: #17A589;
-}
-/* Sweep To Right */
-.hvr-sweep-to-right {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  position: relative;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-.hvr-sweep-to-right:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #17A589;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transform-origin: 0 50%;
-  transform-origin: 0 50%;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
-  color: black;
-}
-.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-/* #mainNav tags adapted from "startbootstrap-freelancer" */
-#mainNav {
+#mainNav {  /* #mainNav tags adapted from "startbootstrap-freelancer" */
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 200;
   text-transform: uppercase;
@@ -335,16 +94,37 @@ time {
   color: black;
   border-color: black; 
 }
-#big-header{
-  font-family: 'Oswald', sans-serif;
-  font-weight: 200;
-  font-size: 100px; 
-}
-#sub-header{
+
+/*GENERAL*/
+.header{
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 22px;
-  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 30px;
+  padding-bottom: 0px;
 }
+.button{
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  padding: 11px;
+  text-transform: uppercase;
+  color: black;
+  border-color: black; 
+  background-color: transparent;
+}
+.anchor{/* adopted from https://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header */
+  display: block;  
+  position: relative;
+  top: -35px;
+  visibility: hidden;
+}
+.divider{
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  max-width: 1000px;
+}
+
+/*ABOUT*/
 #about{ 
   background: #76D7C4;  
   padding-top: 30px;
@@ -364,12 +144,118 @@ time {
   border-radius: 50%; 
   padding: 30px; 
 } 
+
+/*EXPERIENCE*/
+.timeline{
+  background: #34495E;
+  color: white;
+  padding-top: 30px; 
+  padding-bottom: 30px;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  position: relative;
+}
+.timeline ul {
+  padding: 50px 0;
+}
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 3px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #76D7C4;
+}
+.timeline ul li:nth-child(1) {
+  background: transparent;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(163, 228, 215, 0.75), rgba(118, 215, 196, 1));
+}
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #F7DC6F;
+}
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 300px;
+  padding: 15px;
+  background: transparent;
+}
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.timeline ul li div h4 {
+  color: #F7DC6F;
+}
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent transparent transparent;
+}
+.timeline ul li:nth-child(even) div {
+  left: -300px;
+}
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent;
+}
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/*PORTFOLIO*/
 #portfolio{ 
   background: #E5E8E8;
   padding-top: 30px; 
   padding-bottom: 30px;
   position: relative;
 }
+.card{
+  margin: 20px;
+  background-color: white;
+}
+.card img{ 
+  width: 100%;  
+  text-align: center;
+  height: auto; 
+  width: auto; 
+  max-width: 300px; 
+  max-height: 300px;
+  padding: 35px;
+  display: block; /*for the img inside your div */  
+  margin-left: auto;
+  margin-right: auto;
+}
+.card p{
+  font-size: 14px;
+  padding-top: 0px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  text-align: left; 
+  line-height: 24px;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/*CONTACT*/
 #contact{
   background: #76D7C4; 
   padding-top: 30px;
@@ -379,6 +265,25 @@ time {
 #contact-form{
   padding-top: 23px; 
 }
+.form-group{
+  border: none;
+  border-radius: 0; 
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .form-group{ 
+    border: none;
+    border-radius: 0; 
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: center;
+  }
+}
+.form-control{
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/*FOOTER*/
 #footer{
   position: relative;
   background: #F7F9F9;
@@ -391,8 +296,28 @@ time {
   line-height: 20px;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+.social{
+  color: #707B7C;
+}
 
-/* CSS Preloader */
+/*MODALS*/
+.modal-dialog{
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  max-width: 100%;
+  background-color: #ECF0F1;
+}
+.modal-dialog img{
+  width: 100%;
+  margin-top: 30px;
+}
+.modal-close-button{ 
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* CSS PRELOADER */
 .spinner-wrapper {
   position: fixed;
   top: 0;
@@ -475,7 +400,6 @@ time {
     opacity: 0; 
   } 
 }
-
 @keyframes sk-foldCubeAngle {
   0%, 10% {
     -webkit-transform: perspective(140px) rotateX(-180deg);
@@ -489,5 +413,88 @@ time {
     -webkit-transform: perspective(140px) rotateY(180deg);
             transform: perspective(140px) rotateY(180deg);
     opacity: 0; 
+  }
+}
+
+/* HVR EFFECTS */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.3);
+    color: #148F77;
+}
+.hvr-fade {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+  background-color: #17A589;
+}
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #17A589;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: black;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 768px) {
+  .titlePage{ 
+    min-height: 560px;
+    opacity: 1;
+  }
+  .arrow{
+    visibility: hidden;
   }
 }
