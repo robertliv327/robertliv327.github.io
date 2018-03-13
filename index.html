@@ -103,54 +103,59 @@
 
     <!-- Experience -->
     <!-- Timeline inspired by https://codepen.io/tutsplus/pen/QNeJgR -->
-<!--     <section class="timeline">
+    <section class="timeline">
       <a class="anchor" id="experience-anchor"></a>
       <h2 class="text-center header">WHAT I'VE BEEN UP TO</h2><hr class="divider">
       <ul>
         <li>
           <div data-aos-once="true" data-aos="fade-left">
-            <h4>Jun - Aug 2018</h4>
-            <p>Amazon Amazon Amazon Amazon Amazon Amazon Amazon Amazon Amazon Amazon Amazon Amazon Amazon Amazon</p>
+            <p class="date">Jun - Aug 2018</p>
+            <h4>Amazon SDE Intern</h4>
+            <p>This coming Summer I will be working at Amazon's Herndon, VA office as a Software Development Engineer intern on the Amazon Web Services team.</p>
           </div>
         </li>
         <li>
           <div data-aos-once="true" data-aos="fade-right">
-            <h4>Jan - Mar 2018</h4>
-            <p>Research Research Research Research Research Research Research Research Research Research Research</p>
+            <p class="date">Jan - Mar 2018</p>
+            <h4>VR Research</h4>
+            <p>I spent my Winter term at Dartmouth researching the possibilities of teaching American Sign Language via virtual reality. See more info on my team's successes below in my Portfolio section.</p>
           </div>
         </li>
         <li>
           <div data-aos-once="true" data-aos="fade-left">
-            <h4>Aug - Dec 2017</h4>
-            <p>Abroad Abroad Abroad Abroad Abroad Abroad Abroad Abroad Abroad Abroad Abroad Abroad Abroad Abroad</p>
+            <p class="date">Aug - Dec 2017</p>
+            <h4>ISI Florence</h4>
+            <p>I spent my Fall 2017 term in Florence, Italy studying Art History and Italian at International Studies Institute Florence.</p>
           </div>
         </li>
         <li>
           <div data-aos-once="true" data-aos="fade-right">
-            <h4>2016 - 2017</h4>
-            <p>Business Manager Business Manager Business Manager Business Manager Business Manager Business Manager</p>
+            <p class="date">2016 - 2017</p>
+            <h4>LCC Business Manager</h4>
+            <p>As the Business Manager for Dartmouth's popular Ledyard Canoe Club, I managed the for-profit canoe and kayak rental business, supervised and trained employees, and worked with local organizations.</p>
           </div>
         </li>
         <li>
           <div data-aos-once="true" data-aos="fade-left">
-            <h4>Jun - Aug 2016</h4>
-            <p>Research Research Research Research Research Research Research Research Research Research Research</p>
-          </div>
-        </li>
-        <li>
-          <div data-aos-once="true" data-aos="fade-right">
-            <h4>Sep 2016</h4>
-            <p>Dartmouth Dartmouth Dartmouth Dartmouth Dartmouth Dartmouth Dartmouth Dartmouth Dartmouth Dartmouth</p>
+            <p class="date">Jun - Aug 2016</p>
+            <h4>AI Research</h4>
+            <p>As a research assistant for Tulane University's Department of Computer Science, I studied the modeling of auditory spatial attention with constraints and focused on testing the working model against experimental data.</p>
           </div>
         </li>
       </ul>
-    </section> -->
+    </section>
 
     <!-- Portfolio -->
     <section id="portfolio">
       <a class="anchor" id="portfolio-anchor"></a>
       <h2 class="text-center header">PORTFOLIO</h2><hr class="divider">
       <div class="container">
+        <div class="row big-card">
+          <div class="card" data-aos-once="true" data-aos="fade-up" data-aos-delay="100">
+            <img class="img-responsive" src="img/asl.png" alt="ASL image">
+            <p><b><u>Learn Sign Language:</u></b>&nbsp; The web app that my Dartmouth research team and I developed to teach American Sign Language via virtual reality. The app requires the use of a Leap Motion device and uses its hand-tracking software to record, analyze, and respond to a user's attempt at making a correct sign. Once the user places their hand over their Leap Motion device, he or she will see the 3D digital rendering of their hand on their computer screen and are able to compare it to correct images of the chosen sign. Once the user thinks they have made the correct sign, they are able to run a test for correctness. <a href="http://www.cs.dartmouth.edu/~robliv/asl/visuals/browser_app/" target="_blank">Click here</a> to check out the app or <a href="https://github.com/robertliv327/Learn-ASL" target="_blank">click here</a> to view the code and more detailed documentation on Github.</p>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-6">
             <!-- 3d Printer -->
@@ -158,16 +163,49 @@
               <img class="img-responsive" src="img/3d-printer.png" alt="3d Printer image">
               <p><b><u>Personal 3d Printer:</u></b>&nbsp; My 3d Printer that I built using an arduino, salvaged DVD drives, an old computer's power source, a few stepper motors, and a 3d printing pen. For the software, I modified various open-source slicing programs and the G-code that they produced. <a href="#3d-printer-modal" data-toggle="modal">Click here</a> to view some pictures.</p>
             </div>
+          </div>
+          <div class="col-md-6">
             <!-- Pebble Scavenger -->
             <div class="card" data-aos-once="true" data-aos="fade-up" data-aos-delay="100">
               <img class="img-responsive" src="img/smartwatch.png" alt="Pebble Scavenger image">
-              <p><b><u>Smartwatch Scavenger Hunt:</u></b>&nbsp; A group project that three friends and I worked on as our final project for CS50: Software Design and Implementation. Our game server hosts a real-time scavenger hunt in which teams communicate via Pebble watches and compete to find all of the clues quickest. <a href="https://github.com/robertliv327/pebble-scavenger-hunt" target="_blank">Click here</a> to view the code on Github.</p>
+              <p><b><u>Smartwatch Scavenger Hunt:</u></b>&nbsp; My group's final project for CS50: Software Design and Implementation. Our game server hosts a real-time scavenger hunt in which teams communicate via Pebble watches and compete to find all of the clues quickest. <a href="https://github.com/robertliv327/pebble-scavenger-hunt" target="_blank">Click here</a> to view the code on Github.</p>
             </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <!-- TSE -->
+            <div class="card" data-aos-once="true" data-aos="fade-up" data-aos-delay="100">
+              <img class="img-responsive" src="img/search.png" alt="TSE image">
+              <p><b><u>Tiny Search Engine:</u></b>&nbsp; A simple search engine that takes in a search query from the user, crawls the web, indexes the pages found, and outputs a ranked list of search results. <a href="https://github.com/robertliv327/tse" target="_blank">Click here</a> to view the code on Github.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
             <!-- CS51 Final Project -->
             <div class="card" data-aos-once="true" data-aos="fade-up" data-aos-delay="100">
               <img class="img-responsive" src="img/circuit.png" alt="51 Project image">
               <p><b><u>y86 Computer Simulator:</u></b>&nbsp; A basic computer simulator that I built as my final project for CS51: Computer Architecture. My CPU performs the full fetch-decode-execute instruction cycle as it takes in commands from a hex file. <a href="#y86-modal" data-toggle="modal">Click here</a> to view a picture of the competed circuit simulation.</p>
             </div> 
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Prolog N-Queens Solver -->
+            <div class="card" data-aos-once="true" data-aos="fade-up" data-aos-delay="100">
+              <img class="img-responsive" src="img/crown.png" alt="N Queens Project image">
+              <p><b><u>Prolog N-Queens Solver:</u></b>&nbsp; My solver for the popular Eight Queens game that I wrote to teach myself Prolog, delve into logical programming languages, explore runtime efficiency, and implement tail recursion. <a href="https://github.com/robertliv327/N-Queens" target="_blank">Click here</a> to view the code on Github.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- Huffman --> 
+            <div class="card" data-aos-once="true" data-aos="fade-up" data-aos-delay="100">
+              <img class="img-responsive" src="img/compression.png" alt="Huffman image">
+              <p><b><u>Huffman Encoding Algorithm:</u></b>&nbsp; A program I wrote that uses lossless data compression to compress and decompress files. <a href="https://github.com/robertliv327/Huffman-Encoding" target="_blank">Click here</a> to view the code on Github.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
             <!-- This Website -->
             <div class="card" data-aos-once="true" data-aos="fade-up" data-aos-delay="100">
               <img class="img-responsive" src="img/logo.jpg" alt="Website image">
@@ -175,21 +213,6 @@
             </div>
           </div> 
           <div class="col-md-6">
-            <!-- TSE -->
-            <div class="card" data-aos-once="true" data-aos="fade-up" data-aos-delay="100">
-              <img class="img-responsive" src="img/search.png" alt="TSE image">
-              <p><b><u>Tiny Search Engine:</u></b>&nbsp; A simple search engine that takes in a search query from the user, crawls the web, indexes the pages found, and outputs a ranked list of search results. <a href="https://github.com/robertliv327/tse" target="_blank">Click here</a> to view the code on Github.</p>
-            </div>
-            <!-- Prolog N-Queens Solver -->
-            <div class="card" data-aos-once="true" data-aos="fade-up" data-aos-delay="100">
-              <img class="img-responsive" src="img/crown.png" alt="N Queens Project image">
-              <p><b><u>Prolog N-Queens Solver:</u></b>&nbsp; My solver for the popular Eight Queens game that I wrote to teach myself Prolog and delve into logical programming languages. I happened to explore runtime efficiency by building three different solvers - one that uses brute force, one that uses simple recursion, and finally one that uses tail recursion. <a href="https://github.com/robertliv327/N-Queens" target="_blank">Click here</a> to view the code on Github.</p>
-            </div>
-            <!-- Huffman --> 
-            <div class="card" data-aos-once="true" data-aos="fade-up" data-aos-delay="100">
-              <img class="img-responsive" src="img/compression.png" alt="Huffman image">
-              <p><b><u>Huffman Encoding Algorithm:</u></b>&nbsp; A program that uses lossless data compression to compress and decompress files. <a href="https://github.com/robertliv327/Huffman-Encoding" target="_blank">Click here</a> to view the code on Github.</p>
-            </div>
             <!-- Art... --> 
             <div class="card" data-aos-once="true" data-aos="fade-up" data-aos-delay="100">
               <img class="img-responsive" src="img/palette.png" alt="Art image">

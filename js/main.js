@@ -59,11 +59,11 @@ $('document').ready(function($) {
     } else {
       $('#mainNav').removeClass('fadeIn');
     };
-    if (scrolled > 1255 ){
-      $('#mainNav').addClass('greenNav');
-    } else {
-      $('#mainNav').removeClass('greenNav');
-    }
+    // if (scrolled > 642 && scrolled < 1300){
+    //   $('#mainNav').addClass('greenNav');
+    // } else {
+    //   $('#mainNav').removeClass('greenNav');
+    // }
     //$(".titlePage").css("opacity", 1 - scrolled / 900); 
     if (!isMobile()) {
       $('#slideshow img').css('top',-(scrolled*0.3)+'px');
