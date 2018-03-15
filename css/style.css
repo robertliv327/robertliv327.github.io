@@ -501,23 +501,11 @@
     min-height: 560px;
     opacity: 1;
   }
-  #slideshow img{
-    visibility: hidden;
-  }
   #big-header{
     font-family: 'Oswald', sans-serif;
     font-weight: 180;
     font-size: 80px; 
   } 
-  .mobileImage {
-    background: url(../img/slides/cropped.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
-    overflow: hidden;
-  }
   .arrow{
     visibility: hidden;
   }
@@ -535,8 +523,19 @@
     /*250+45-6*/
   }
 }
-
 @media screen and (max-width: 600px) {
+  #slideshow img{
+    visibility: hidden;
+  }
+  .mobileImage {
+    background: url(../img/slides/cropped.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+  }
   .timeline ul li {
     margin-left: 20px;
   }
