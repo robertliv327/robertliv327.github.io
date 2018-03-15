@@ -534,6 +534,7 @@
     -o-background-size: cover;
     background-size: cover;
     overflow: hidden;
+    max-height: 100vh;
   }
   .timeline ul li {
     margin-left: 20px;
