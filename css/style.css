@@ -501,13 +501,30 @@
     min-height: 560px;
     opacity: 1;
   }
+  #slideshow{
+    visibility: hidden;
+  }
+  #big-header{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 180;
+    font-size: 80px; 
+  }
+  .mobileImage {
+    background: url(../img/slides/cortina4.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 720px;
+    overflow: hidden;
+  }
   .arrow{
     visibility: hidden;
   }
   .big-card{
-  padding-left: 15px;
-  padding-right: 15px;
-}
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 @media screen and (max-width: 900px) {
   .timeline ul li div {

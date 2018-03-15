@@ -15,16 +15,18 @@ $('document').ready(function($) {
     });
   }, 2500);
 
-  $("#slideshow > div:gt(0)").hide();
+  if ($(window).width() > 768){
+    $("#slideshow > div:gt(0)").hide();
 
-  setInterval(function() { 
-    $('#slideshow > div:first')
-      .fadeOut(3000)
-      .next()
-      .fadeIn(3000)
-      .end()
-      .appendTo('#slideshow');
-  },  7000);
+    setInterval(function() { 
+      $('#slideshow > div:first')
+        .fadeOut(3000)
+        .next()
+        .fadeIn(3000)
+        .end()
+        .appendTo('#slideshow');
+    },  7000);
+  }
 
   // Smooth scrolling using jQuery easing - adopted from bootstrap.com
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
