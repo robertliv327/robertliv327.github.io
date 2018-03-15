@@ -508,7 +508,7 @@
     font-family: 'Oswald', sans-serif;
     font-weight: 180;
     font-size: 80px; 
-  }
+  } 
   .mobileImage {
     background: url(../img/slides/cortina4.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
