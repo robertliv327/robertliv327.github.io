@@ -79,6 +79,7 @@ $('document').ready(function($) {
   // AOS setup
   AOS.init({
     duration: 1200,
+    disable: 'mobile'
   })
 })(jQuery); // End of use strict
 

@@ -501,7 +501,7 @@
     min-height: 560px;
     opacity: 1;
   }
-  #slideshow{
+  #slideshow img{
     visibility: hidden;
   }
   #big-header{
@@ -510,12 +510,12 @@
     font-size: 80px; 
   } 
   .mobileImage {
-    background: url(../img/slides/cortina4.jpg) no-repeat center center fixed;
+    background: url(../img/slides/cropped.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height: 720px;
+    min-height: 560px;
     overflow: hidden;
   }
   .arrow{
