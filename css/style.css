@@ -515,7 +515,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height: 560px;
+    height: 100%;
     overflow: hidden;
   }
   .arrow{
